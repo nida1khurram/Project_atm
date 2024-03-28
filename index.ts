@@ -60,8 +60,8 @@ if(pinAns.pin == myPin)
             console.log(`Sorry ! You have insufficient balance`);  
             };
         
+}    
 }else{
     console.log(`Invalid pin code`);
-    
-};
+
 };

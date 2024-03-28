@@ -54,9 +54,8 @@ if (pinAns.pin == myPin) {
         }
         ;
     }
-    else {
-        console.log(`Invalid pin code`);
-    }
-    ;
+}
+else {
+    console.log(`Invalid pin code`);
 }
 ;
