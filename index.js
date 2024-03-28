@@ -27,15 +27,15 @@ if (pinAns.pin == myPin) {
         ]);
         myBalance -= amountAns.amount;
         if (amountAns.amount <= myBalance) {
-            console.log("your remaining balance is :", myBalance);
+            console.log(`your remaining balance is : ${myBalance}`);
         }
         else {
-            console.log("Sorry ! You have insufficient balance");
+            console.log(`Sorry ! You have insufficient balance`);
         }
         ;
     }
     else if (operatorAns.operation === "check balance") {
-        console.log("***Check Balance:*** \n" + "Your current Balance is:,", myBalance);
+        console.log(`***Check Balance:*** \n  Your current Balance is: ${myBalance}`);
     }
     else if (operatorAns.operation === "fast cash") {
         let amountFast = await inquirer.prompt([{
@@ -47,14 +47,16 @@ if (pinAns.pin == myPin) {
         ]);
         myBalance -= amountFast.fast;
         if (amountFast.fast <= myBalance) {
-            console.log("your remaining balance is :", myBalance);
+            console.log(`your remaining balance is : ${myBalance}`);
         }
         else {
-            console.log("Sorry ! You have insufficient balance");
+            console.log(`Sorry ! You have insufficient balance`);
         }
         ;
     }
+    else {
+        console.log(`Invalid pin code`);
+    }
+    ;
 }
-else {
-    console.log("Invalid pin code");
-}
+;
