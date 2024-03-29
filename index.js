@@ -25,8 +25,8 @@ if (pinAns.pin == myPin) {
                 type: "number",
             },
         ]);
-        myBalance -= amountAns.amount;
         if (amountAns.amount <= myBalance) {
+            myBalance -= amountAns.amount;
             console.log(`your remaining balance is : ${myBalance}`);
         }
         else {
@@ -45,8 +45,8 @@ if (pinAns.pin == myPin) {
                 choices: [1000, 2000, 5000, 10000, 15000],
             },
         ]);
-        myBalance -= amountFast.fast;
         if (amountFast.fast <= myBalance) {
+            myBalance -= amountFast.fast;
             console.log(`your remaining balance is : ${myBalance}`);
         }
         else {
